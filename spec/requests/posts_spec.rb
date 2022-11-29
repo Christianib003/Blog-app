@@ -21,6 +21,5 @@ RSpec.describe 'Posts', type: :request do
       get '/users/:user_id/posts/:id'
       expect(response).to render_template('show')
     end
-
   end
 end
