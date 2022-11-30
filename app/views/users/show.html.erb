@@ -1,1 +1,51 @@
-<h1>Here is a specific user</h1>
+<div>
+  <div>
+    <div>
+      <img src="<%= @user.photo %>" alt="profile" />
+    </div>
+    <div>
+      <h2><%= @user.name %></h2>
+    </div>
+    <div>
+      <p>
+        <small
+          >Number of posts: <%= @user.posts_counter %></small
+        >
+      </p>
+    </div>
+  </div>
+  <div>
+    <h1>Bio</h1>
+    <div>
+      <p><%= @user.bio %></p>
+    </div>
+  </div>
+</div>
+<div>
+  <div>
+    <h2>Most Recent Posts</h2>
+    <div>
+      <% @user.most_recent_posts.each do |post| %> <%= link_to post.title,
+      user_post_path(@user, post) %>
+      <ul>
+        <li><%= post.text %></li>
+      </ul>
+      <div >
+        <p>
+          <small
+            >Comments: <%= post.comments_counter %></small
+          >
+        </p>
+        |
+        <p>
+          <small>Likes: <%= post.likes_counter %></small>
+        </p>
+      </div>
+      <% end %>
+
+      <button>
+        <%= link_to "See All Posts", user_posts_path(@user) %>
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,30 @@
-<h1>Here is a list of all users</h1>
+<h1>Welcome to the BlogApp</h1>
+<% if @users.empty? %>
+<div>
+  <div>
+    <div>List of all users</div>
+    <div>
+      <h5>
+        Oops! there are currently no users!
+      </h5>
+    </div>
+  </div>
+</div>
+<% end %>
+<div>
+  <div>
+    <% @users.each do |user| %>
+    <div>
+      <div>
+        <img src="<%= user.photo %>" alt="profile" />
+      </div>
+      <div>
+        <h2><%= link_to user.name , user %></h2>
+        <p>
+          Number of posts: <%= user.posts_counter %>
+        </p>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
