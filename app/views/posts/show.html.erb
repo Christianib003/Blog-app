@@ -1,32 +1,32 @@
 <% @title="BlogApp | #{@post.title}" %>
-<div>
-  <div>
-    <div>
-      <div>
-        <div><%= @post.title %> by <%= @user.name %></div>
-        <div>
-          <p><small>Comments: <%= @post.comments_counter %></small></p>
+<div class='mt-3 d-flex align-items-center flex-column'>
+  <div class="card mb-3" style="width: 670px;">
+    <div class="card-header text-white">
+      <div class='row'>
+        <div class='col-md-8'><%= @post.title %> by <%= @user.name %></div>
+        <div class='col-md-4 d-flex gap-2'>
+          <p class="card-text"><small class="text-white">Comments: <%= @post.comments_counter %></small></p>
           | 
-          <p><small>Likes: <%= @post.likes_counter %></small></p>
+          <p class="card-text"><small class="text-white">Likes: <%= @post.likes_counter %></small></p>
         </div>
       </div>
     </div>
-    <div>
-      <p><%= @post.text%></p>
+    <div class="card-body">
+      <p class="card-text"><%= @post.text%></p>
     </div>
   </div>
   <h3>Comments</h3>
   <% if @comments.empty? %>
-    <div>
-      <div>
-        <p>Ooops! This post has no comments.</p>
+    <div class="card mb-3" style="width: 670px;">
+      <div class="card-body">
+        <p class="card-text">No Comment Found</p>
       </div>
     </div>
   <% else %>
-    <div>
-      <div>
+    <div class="card mb-3" style="width: 670px;">
+      <div class="card-body">
         <% @comments.each do |comment| %>
-          <p><%= comment.author.name %>: <%= comment.text %></p>
+          <p class="card-text"><%= comment.author.name %>: <%= comment.text %></p>
         <% end %>
       </div>
     </div>
