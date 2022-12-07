@@ -74,3 +74,5 @@ group :test do
 end
 
 gem 'ffi'
+
+gem 'bullet', group: 'development'
