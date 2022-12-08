@@ -7,7 +7,6 @@ development:
   <<: *default
   database: blogApp_development
   username: chris
-  password: password
   host: localhost
   port: 5432
 
@@ -15,7 +14,6 @@ test:
   <<: *default
   database: blogApp_test
   username: chris
-  password: password
   host: localhost
   port: 5432
 
@@ -23,6 +21,5 @@ production:
   <<: *default
   database: blogApp_production
   username: chris
-  password: password
   host: localhost
   port: 5432
