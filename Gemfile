@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.1.2'
+ruby '3.0.4'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem 'rails', '~> 7.0.4'
@@ -80,3 +80,5 @@ gem 'ffi'
 gem 'bullet', group: 'development'
 
 gem 'digest'
+gem 'devise'
+gem 'letter_opener'
