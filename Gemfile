@@ -79,6 +79,6 @@ gem 'ffi'
 
 gem 'bullet', group: 'development'
 
-gem 'digest'
 gem 'devise'
+gem 'digest'
 gem 'letter_opener'
