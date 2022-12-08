@@ -6,20 +6,20 @@ default: &default
 development:
   <<: *default
   database: blogApp_development
-  username: postgres
+  username: chris
   host: localhost
   port: 5432
 
 test:
   <<: *default
   database: blogApp_test
-  username: postgres
+  username: chris
   host: localhost
   port: 5432
 
 production:
   <<: *default
   database: blogApp_production
-  username: postgres
+  username: chris
   host: localhost
   port: 5432
