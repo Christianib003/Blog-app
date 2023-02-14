@@ -1,4 +1,4 @@
- <h1><b>Blog App</b></h1>
+ <h1>Blog App</h1>
 
 <!-- TABLE OF CONTENTS -->
 
