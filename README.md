@@ -117,9 +117,9 @@ To run the project, execute the following command:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[Adding comments]**
-- [ ] **[adding posts]**
-- [ ] **[UI]**
+-  **[Adding comments]**
+-  **[adding posts]**
+-  **[UI]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
