@@ -2,6 +2,7 @@
 
 <!-- TABLE OF CONTENTS -->
 
+
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -32,7 +33,7 @@
 ## 🛠 Built With <a name="built-with"></a>
 
 - Ruby
-- Rails
+- Ruby on Rails
 - Gem
 - postgresql
 
