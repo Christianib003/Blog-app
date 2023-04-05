@@ -38,7 +38,7 @@ Ko <h1>Blog App</h1>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only
+> Describe the tech stac
 
 </details>
 
