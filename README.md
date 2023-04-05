@@ -51,7 +51,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+> Describe between 1-3 key features of the applicati
 
 - **[MVC]**
 
